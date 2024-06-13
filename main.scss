@@ -1,0 +1,72 @@
+@use 'fonts';
+@use 'colors';
+@use 'mixins';
+
+body, html {
+    margin: 0;
+    font-family: "Barlow", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+
+    .order-button {
+        @include mixins.order-button;
+        color: rgba(22, 37, 66, 1);
+        background: rgba(232, 239, 242, 1);
+    }
+}
+
+.ad {
+    padding: 0 2rem;
+    h1 {
+        color: rgba(22, 37, 66, 1);
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        }
+
+    p {
+        font-weight: 500;
+        font-size: 1rem;
+        color: rgba(123, 139, 173, 1);
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .order-button {
+        @include mixins.order-button;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(241, 103, 24, 1);
+        padding: 1rem 0;
+    }
+
+    .release {
+        @include mixins.order-button;
+    }
+
+}
+
+
+
+.images {
+    margin-top: 4rem;
+    display: grid;
+    
+    img {
+        border-radius: 25px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+    
+    
+.keyboard {
+    margin-left: 2rem;
+}

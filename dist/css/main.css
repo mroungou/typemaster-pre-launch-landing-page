@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body, html {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+.header .order-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px;
+  color: rgb(22, 37, 66);
+  background: rgb(232, 239, 242);
+}
+
+.ad {
+  padding: 0 2rem;
+}
+.ad h1 {
+  color: rgb(22, 37, 66);
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.ad p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(123, 139, 173);
+}
+.ad .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.ad .order-button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(241, 103, 24);
+  padding: 1rem 0;
+}
+.ad .release {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px;
+}
+
+.images {
+  margin-top: 4rem;
+  display: grid;
+}
+.images img {
+  border-radius: 25px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.keyboard {
+  margin-left: 2rem;
+}/*# sourceMappingURL=main.css.map */
