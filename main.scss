@@ -22,7 +22,7 @@ body, html {
 }
 
 .ad {
-    padding: 0 2rem;
+    padding: 0 1.65rem;
     h1 {
         color: rgba(22, 37, 66, 1);
         font-size: 3rem;
@@ -34,6 +34,7 @@ body, html {
         font-weight: 500;
         font-size: 1rem;
         color: rgba(123, 139, 173, 1);
+        line-height: 150%;
     }
 
     .info {
@@ -73,7 +74,7 @@ body, html {
     grid-column: 1 / 6;
     width: 372px;
     height: 331px;
-    margin-left: 2rem;
+    margin-left: 1.65rem;
 }
 
 .phone {
@@ -120,7 +121,7 @@ body, html {
 }
 
 .features {
-    padding: 1.75rem;
+    padding: 1.65rem;
     text-align: center;
     display: grid;
     row-gap: 3rem;
@@ -146,8 +147,25 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 2.5rem;
     }
 
+    span.new-line {
+        display: block;
+    }
+
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: rgba(123, 139, 173, 1);
+    font-size: 1rem;
+    font-weight: 500;
+
+    .company {
+        font-weight: 700;
+    }
 }
 
 
