@@ -58,7 +58,9 @@ body, html {
 .images {
     margin-top: 4rem;
     display: grid;
-    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 2rem;
     img {
         border-radius: 25px;
         box-sizing: border-box;
@@ -68,5 +70,85 @@ body, html {
     
     
 .keyboard {
+    grid-column: 1 / 6;
+    width: 372px;
+    height: 331px;
     margin-left: 2rem;
 }
+
+.phone {
+    grid-row-start: 2;
+    position: relative;
+    display: inline-block;
+    width: 129px;
+    height: 193px;
+    left: -32px;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(241, 103, 24, 0.8);
+        border-radius: 25px;
+    }
+}
+
+.glass {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 220px;
+    height: 193px;
+}
+
+.about {
+    text-align: center;
+    padding: 2rem;
+    h2 {
+        font-weight: 900;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: rgba(22, 37, 66, 1);
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: rgba(123, 139, 173, 1);
+        line-height: 141%;
+    }
+}
+
+.features {
+    padding: 1.75rem;
+    text-align: center;
+    display: grid;
+    row-gap: 3rem;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: rgba(22, 37, 66, 1);
+    }
+
+    p {
+        font-size: 1rem;
+        color: rgba(123, 139, 173, 1);
+        line-height: 150%;
+    }
+    .icons {
+        margin: auto;
+        height: 65px;
+        width: 65px;
+        border-radius: 16px;
+        background-color: rgba(241, 103, 24, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
