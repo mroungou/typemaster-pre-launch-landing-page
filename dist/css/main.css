@@ -6,6 +6,10 @@ body, html {
   overflow-x: hidden;
 }
 
+.mobile, .tablet {
+  display: none;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -136,9 +140,10 @@ body, html {
   color: rgb(22, 37, 66);
 }
 .features p {
+  font-weight: 500;
   font-size: 1rem;
   color: rgb(123, 139, 173);
-  line-height: 150%;
+  line-height: 160%;
 }
 .features .icons {
   margin: auto;
@@ -164,4 +169,99 @@ footer {
 }
 footer .company {
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .header .order-button {
+    width: 50%;
+    margin-left: auto;
+    padding: 1.25rem 0;
+  }
+  .ad {
+    display: grid;
+    grid-template-columns: auto 300px;
+    -moz-column-gap: 5.5rem;
+         column-gap: 5.5rem;
+    padding-top: 1rem;
+  }
+  .ad .info {
+    padding-top: 1.75rem;
+  }
+  .ad .release {
+    margin-left: auto;
+  }
+  .ad .order-button {
+    padding: 1.25rem;
+  }
+  .ad .keyboard2 img {
+    width: 478px;
+    height: 425px;
+    border-radius: 25px;
+  }
+  .images2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 2rem;
+  }
+  .images2 .phone2 {
+    position: relative;
+    width: 214px;
+    height: 320px;
+  }
+  .images2 .phone2 img {
+    border-radius: 25px;
+    width: 214px;
+    height: 320px;
+  }
+  .images2 .phone2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(241, 103, 24, 0.8);
+    border-radius: 25px;
+  }
+  .images2 .glass2 {
+    margin-left: auto;
+  }
+  .images2 .glass2 img {
+    border-radius: 25px;
+    width: 445px;
+    height: 320px;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .about h2 {
+    text-align: left;
+  }
+  .about p {
+    margin: auto 0 auto auto;
+    text-align: left;
+    padding: 0 2rem;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+    padding: 2rem;
+    text-align: left;
+  }
+  .features .icons {
+    margin: 0;
+  }
+  .features p {
+    padding-right: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
